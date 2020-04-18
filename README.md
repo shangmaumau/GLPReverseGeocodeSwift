@@ -41,4 +41,4 @@
 ```
 
 # License
-GLPReverseGeocode 使用 [MIT License](http://opensource.org/licenses/MIT) 。
+GLPReverseGeocodeSwift 使用 [MIT License](http://opensource.org/licenses/MIT) 。
