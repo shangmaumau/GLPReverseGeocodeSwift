@@ -30,7 +30,7 @@
 适用于单次请求。
 ```swift
     geocode = GLPReverseGeocode.init(service: .apple)
-    geocode.reverseGeocode(with: coordi) { (address, error) in
+    geocode.reverseGeocode(with: coordi) { [weak self] (address, error) in
         DispatchQueue.main.async {
             self?.hideProgressHUD()
             if error == nil {
