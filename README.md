@@ -2,11 +2,10 @@
 
 # 简介
 示例提供了集合的六种地理坐标反编码的方法，分别为苹果地图，高德地图，百度地图，谷歌地图，微软地图（前必应地图），以及 OpenStreetMap 开放地图（OSM）。
-除了苹果地图和 OSM ，其他几个地图服务，都需要导入相应的 SDK ，在 GLPReverseGeocode.h 中，如果导入了相应的 SDK ，则取消注释相应的 define 即可。
-示例使用的是 CocoaPods 导入方式，手动导入的，可能不需要尖括号导入。
-
+除了苹果地图和 OSM ，其他几个地图服务，都需要导入相应的 SDK 。在 GLPReverseGeocode.swift 中，默认导入了所有服务，因此要想使示例运行，请先运行 `pod install` 安装所有依赖的地图服务库。
 # 注意
-在 SceneDelegate.m 中，需要提供自己申请的相应的地图的 SDK 的授权 key 。与此同时，你同时需要更改示例的 Bundle ID 。
+在 SceneDelegate.swift 中，除谷歌 API key 之外，其他几个地图服务都提供了示例的 key ，是与 Bundle ID 绑定在一起的，目前都可用。
+谷歌 API 目前是通用的 API ，不再提供单独的地图 API key ，但是可以配置为仅使用地图服务。详情可自行搜索了解，此处不赘述。
 
 # 使用
 
